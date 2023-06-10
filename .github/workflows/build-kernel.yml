@@ -7,11 +7,11 @@ on:
       KERNEL_SOURCE:
         description: 'Kernel Source'
         required: true
-        default: 'TheVoyager0777/Kernel_Xiaomi_SM8150_R'
+        default: 'BeiChienThan/Kernel_Xiaomi_SM8150_R'
       KERNEL_SOURCE_BRANCH:
         description: 'Branch'
         required: true
-        default: 'VK-VI'
+        default: 'rapheus'
       KERNEL_DEFCONFIG:
         description: 'Defconfig'
         required: true
@@ -41,7 +41,7 @@ on:
       ZRAM_COMPONENT:
         description: 'ZRAM COMPONENT,you can switch to lz4'
         required: true
-        default: 'zstd'
+        default: 'lz4'
 
 jobs:
   build:
