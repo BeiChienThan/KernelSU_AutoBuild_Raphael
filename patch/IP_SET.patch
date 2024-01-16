@@ -7,10 +7,10 @@ Subject: [PATCH] feat IPSET
  arch/arm64/configs/raphael_defconfig | 21 +++++++++++++++++++++
  1 file changed, 21 insertions(+)
 
-diff --git a/arch/arm64/configs/raphael_defconfig b/arch/arm64/configs/raphael_defconfig
+diff --git a/arch/arm64/configs/judyln_lao_com-perf_defconfig b/arch/arm64/configs/judyln_lao_com-perf_defconfig
 index 3709d2f0c..ed83cc81a 100644
---- a/arch/arm64/configs/raphael_defconfig
-+++ b/arch/arm64/configs/raphael_defconfig
+--- a/arch/arm64/configs/judyln_lao_com-perf_defconfig
++++ b/arch/arm64/configs/judyln_lao_com-perf_defconfig
 @@ -228,6 +228,7 @@ CONFIG_IP6_NF_FILTER=y
  CONFIG_IP6_NF_TARGET_REJECT=y
  CONFIG_IP6_NF_MANGLE=y
