@@ -84,21 +84,7 @@ jobs:
           ref: ${{ env.KERNEL_SOURCE_BRANCH }}
           submodules: recursive
           path: android-kernel
-
-      - name: Setup IPSET
-        if: env.USE_IPSET == 'true'
-        run: |
-          cd android-kernel
-          git apply ../patch/IP_SET.patch
-          echo "apply IP_SET patch"
-
-      - name: Setup lz4
-        if: env.ZRAM_COMPONENT == 'lz4'
-        run: |
-          cd android-kernel
-          git apply ../patch/lz4.patch
-          echo "apply lz4 patch"
-
+          
       - name: Setup KernelSU
         if: env.USE_KERNELSU == 'true'
         run: |
